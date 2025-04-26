@@ -1,0 +1,9 @@
+{
+  "name": "kheta-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/kheta-e2e/src",
+  "implicitDependencies": ["kheta"],
+  "// targets": "to see all targets run: nx show project kheta-e2e --web",
+  "targets": {}
+}
