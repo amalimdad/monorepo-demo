@@ -1,0 +1,49 @@
+.order-management {
+  padding: 20px;
+}
+.filters {
+  margin-bottom: 20px;
+}
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.order-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.order-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.processing {
+  background-color: #cce5ff;
+  color: #004085;
+}
+.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+.order-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}

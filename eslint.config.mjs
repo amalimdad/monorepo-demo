@@ -17,8 +17,24 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'scope:products',
+              onlyDependOnLibsWithTags: [ "type:ui","scope:products"],
+            },
+            {
+              sourceTag: 'scope:orders',
+              onlyDependOnLibsWithTags: [ "type:ui","scope:orders"],
+            },
+            {
+              sourceTag: 'type:ui',
+              onlyDependOnLibsWithTags: [ "type:ui" ],
+            },
+            {
+              sourceTag: 'scope:kheta',
+              onlyDependOnLibsWithTags: [ "type:feature","type:ui", 'scope:kheta',"scope:shared"],
+            },
+            {
+              sourceTag: 'scope:hope',
+              onlyDependOnLibsWithTags: [ "type:feature","type:ui", 'scope:hope', "scope:shared"],
             },
           ],
         },

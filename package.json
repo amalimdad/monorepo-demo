@@ -2,7 +2,11 @@
   "name": "@monorepo-demo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve",
+    "build": "nx build",
+    "dev": "nx dev"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~19.2.0",
@@ -26,7 +30,7 @@
     "@nx/angular": "20.8.1",
     "@nx/devkit": "20.8.1",
     "@nx/eslint": "20.8.1",
-    "@nx/eslint-plugin": "20.8.1",
+    "@nx/eslint-plugin": "^20.8.1",
     "@nx/jest": "20.8.1",
     "@nx/js": "20.8.1",
     "@nx/playwright": "20.8.1",

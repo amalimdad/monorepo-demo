@@ -1,0 +1,24 @@
+<div class="orders-container">
+  <h2>Orders</h2>
+  <div class="cart-section">
+    <h3>Shopping Cart</h3>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <span>{{ item.name }} - ${{ item.price }}</span>
+      <lib-button
+        text="Remove"
+        type="secondary"
+        (onClick)="removeFromCart(item)">
+      </lib-button>
+    </div>
+    <div class="cart-total">
+      <strong>Total: ${{ getTotal() }}</strong>
+    </div>
+    <lib-button
+      text="Checkout"
+      type="primary"
+      [disabled]="cartItems.length === 0"
+      (onClick)="checkout()">
+    </lib-button>
+  </div>
+  <!-- <lib-products></lib-products> -->
+</div>

@@ -1,0 +1,26 @@
+.products-container {
+  padding: 20px;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.product-info {
+  display: flex;
+  gap: 20px;
+}
+.product-name {
+  font-weight: bold;
+}
+.product-price {
+  color: #28a745;
+}

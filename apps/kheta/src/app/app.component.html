@@ -1,2 +1,14 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<div class="app-container">
+  <header>
+    <h1>Kheta Admin</h1>
+    <nav>
+      <a routerLink="/">Dashboard</a>
+      <a routerLink="/products">Manage Products</a>
+      <a routerLink="/orders">Process Orders</a>
+      <a routerLink="/analytics">Analytics</a>
+    </nav>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>
