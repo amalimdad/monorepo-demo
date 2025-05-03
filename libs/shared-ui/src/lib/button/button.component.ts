@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
 })
 export class ButtonComponent {
-  @Input() label= 'Click me';
+  @Input() label= 'Click me!';
   @Output() handleClick = new EventEmitter<void>();
   @Input() type: 'primary' | 'secondary' = 'primary';
   @Input() disabled = false;
